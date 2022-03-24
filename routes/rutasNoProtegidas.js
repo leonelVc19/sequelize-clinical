@@ -8,7 +8,7 @@ const passwordController = require('../controllers/Session/PasswordController');
 //rutasNoProtegidas
 
 module.exports = function() {
-  // rutas que no requieren autenticacion
+  // rutas que no requieren autenticación
   router.post('/login', sesionController.login);
   router.post('/users', usuariosController.add);
   router.post('/recuperar-password', passwordController.resetPassword);

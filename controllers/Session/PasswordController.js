@@ -85,10 +85,7 @@ exports.validationToken = async (request, response, next) => {
     }
   };
 
-
-
   //INGRESAR Y GUARDAR LA NUEVEA CONTRASE;A
-  
 exports.SaveNewPassword = async (request, response, next) => {
     try {
       // volver a validar el toke
