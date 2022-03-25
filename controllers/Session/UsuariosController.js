@@ -11,8 +11,7 @@ exports.add = async (request, response, next) => {
   
       const datosUsuario = {...request.body};
   
-      // asegurar la contraseña
-      // usar bcrypt
+      // asegurar la contraseña usar bcrypt
       // salt: generacion de una cadena aleatoria de N longitud
       const salt = await bcrypt.genSalt(10);
   
