@@ -2,23 +2,23 @@ const express = require('express');
 const router = express.Router();
 
 //Importación de los controllers para las acciones.
-const customersController = require('./controllers/customersController');
+const customersController = require('../controllers/customersController');
 
-const appointmentsController = require('./controllers/appointmentsController');
+const appointmentsController = require('../controllers/appointmentsController');
 
-const categoriesController = require('./controllers/categoriesController');
+const categoriesController = require('../controllers/categoriesController');
 
-const ordersController = require('./controllers/ordersController');
+const ordersController = require('../controllers/ordersController');
 
-const treatmentsController = require('./controllers/treatmentsController');
-const imagesController = require('./controllers/imagesController');
+const treatmentsController = require('../controllers/treatmentsController');
+const imagesController = require('../controllers/imagesController');
 
-const informationHome = require('./controllers/infomationHome');
-const imageInformationHome = require('./controllers/imageInformationController');
+const informationHome = require('../controllers/infomationHome');
+const imageInformationHome = require('../controllers/imageInformationController');
 
 
 //IMPORTAR RUTAS DE USUARIOS.
-const usuariosController = require('./controllers/Session/UsuariosController');
+const usuariosController = require('../controllers/Session/UsuariosController');
 module.exports = () => {
     //Rutas de customers.
     //Mostrar todos los registros y por id

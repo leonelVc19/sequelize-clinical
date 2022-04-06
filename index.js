@@ -11,7 +11,7 @@ require('./middlewares/auth');
 const db = require('./models');
 
 //importación de rutas PROTEGIDAS
-const routes = require('./routes');
+const routes = require('./routes/routes');
 
 //IMPORTACION DE RUTAS NO PROTEGIDAS
 const rutasNoProtegidas = require('./routes/rutasNoProtegidas');
