@@ -75,7 +75,7 @@ exports.show = async(req, res, next) => {
 };
 
 
-/*
+
 // mostrar mi perfil
 exports.profile = async (req, res, next) => {
   try {
@@ -90,4 +90,4 @@ exports.profile = async (req, res, next) => {
     console.log(error);
     response.status(503).json({ mensaje: 'Error al leer el perfil de usuario' });
   }
-};*/
+};

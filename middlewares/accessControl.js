@@ -1,4 +1,4 @@
-const { roles } = require('../config/config');
+const { roles } = require('../config/role');
 
 /**
  * función para validar el permiso del usuario actual sobre el recurso indicado
@@ -9,8 +9,9 @@ const { roles } = require('../config/config');
  */
  exports.grantAccess = (accion, recurso) => 
  async (request, response, next) => {
-
    try {
+    console.log(request.user);
+
      // permiso
      const permiso = roles().can(request.user.rol)[accion](recurso);
 
