@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const passport = require('passport');
 
+
+
 //importacion de las variables de entorno
 require('dotenv').config();
 require('./middlewares/auth');
@@ -12,6 +14,7 @@ const db = require('./models');
 
 //importación de rutas PROTEGIDAS
 const routes = require('./routes/routes');
+
 
 //IMPORTACION DE RUTAS NO PROTEGIDAS
 const rutasNoProtegidas = require('./routes/rutasNoProtegidas');
@@ -30,6 +33,9 @@ db.sequelize.authenticate()
 const app = express();
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
+app.get('/', (req, res) => {
+    res.send('Welcome to the API!');
+});
 
 //conrs para el acceso algun dominio d
 //oh donde estara ubicado el frontend,.
